@@ -11,4 +11,6 @@
 
 @interface JKViewController : UIViewController
 
+-(IBAction)loadUpGameScene:(id)sender;
+
 @end

@@ -24,6 +24,7 @@
 		AC5EAD9B19F8A8B300BE782B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC5EAD7619F8A8B300BE782B /* UIKit.framework */; };
 		AC5EADA319F8A8B300BE782B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC5EADA119F8A8B300BE782B /* InfoPlist.strings */; };
 		AC5EADA519F8A8B300BE782B /* JKSpriteKitTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5EADA419F8A8B300BE782B /* JKSpriteKitTestTests.m */; };
+		AC5EADB019F8B7B200BE782B /* JKSceneView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5EADAF19F8B7B200BE782B /* JKSceneView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		AC5EADA019F8A8B300BE782B /* JKSpriteKitTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JKSpriteKitTestTests-Info.plist"; sourceTree = "<group>"; };
 		AC5EADA219F8A8B300BE782B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AC5EADA419F8A8B300BE782B /* JKSpriteKitTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKSpriteKitTestTests.m; sourceTree = "<group>"; };
+		AC5EADAE19F8B7B200BE782B /* JKSceneView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKSceneView.h; sourceTree = "<group>"; };
+		AC5EADAF19F8B7B200BE782B /* JKSceneView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKSceneView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +129,8 @@
 				AC5EAD8619F8A8B300BE782B /* Main.storyboard */,
 				AC5EAD8919F8A8B300BE782B /* JKViewController.h */,
 				AC5EAD8A19F8A8B300BE782B /* JKViewController.m */,
+				AC5EADAE19F8B7B200BE782B /* JKSceneView.h */,
+				AC5EADAF19F8B7B200BE782B /* JKSceneView.m */,
 				AC5EAD8C19F8A8B300BE782B /* JKMyScene.h */,
 				AC5EAD8D19F8A8B300BE782B /* JKMyScene.m */,
 				AC5EAD8F19F8A8B300BE782B /* Spaceship.png */,
@@ -263,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC5EADB019F8B7B200BE782B /* JKSceneView.m in Sources */,
 				AC5EAD8119F8A8B300BE782B /* main.m in Sources */,
 				AC5EAD8B19F8A8B300BE782B /* JKViewController.m in Sources */,
 				AC5EAD8519F8A8B300BE782B /* JKAppDelegate.m in Sources */,

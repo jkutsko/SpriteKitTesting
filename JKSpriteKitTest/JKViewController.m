@@ -8,29 +8,48 @@
 
 #import "JKViewController.h"
 #import "JKMyScene.h"
+#import "JKSceneView.h"
+
 
 @implementation JKViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
     // Configure the view.
-    SKView * skView = (SKView *)self.view;
+    SKView * skView = (SKView *)[[JKSceneView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height/2)];
     skView.showsFPS = YES;
     skView.showsNodeCount = YES;
     
     // Create and configure the scene.
-    SKScene * scene = [JKMyScene sceneWithSize:skView.bounds.size];
+    SKScene * scene = [[JKMyScene alloc] initWithSize:skView.bounds.size];
     scene.scaleMode = SKSceneScaleModeAspectFill;
     
     // Present the scene.
     [skView presentScene:scene];
+    [self.view addSubview:skView];
 }
 
 - (BOOL)shouldAutorotate
 {
     return YES;
+}
+
+
+-(IBAction)loadUpGameScene:(id)sender
+{
+    // Configure the view.
+    SKView * skView = (SKView *)self.view;
+    skView.showsFPS = YES;
+    skView.showsNodeCount = YES;
+
+    // Create and configure the scene.
+    SKScene * scene = [JKMyScene sceneWithSize:skView.bounds.size];
+    scene.scaleMode = SKSceneScaleModeAspectFill;
+
+    // Present the scene.
+    [skView presentScene:scene];
+
 }
 
 - (NSUInteger)supportedInterfaceOrientations
